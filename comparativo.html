@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<!--
+    EMOBRAS - Empreiteira de Obras com Tijolo Ecológico
+    Página: Ecológico x convencional (comparativo.html)
+    Tecnologias: HTML, CSS e JavaScript puros (sem Bootstrap)
+    Autores: Gustavo Volpato e Gustavo Salazar
+    Disciplina: Desenvolvimento Front-End para Web - Universidade Positivo
+-->
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecológico x convencional | EMOBRAS</title>
+    <link rel="icon" href="img/emobras-icone.png">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/puro.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="menu-puro">
+            <div class="container menu-puro-conteudo">
+                <a href="index.html">
+                    <img src="img/emobras-logo.png" alt="Logo EMOBRAS" class="logo-navbar">
+                </a>
+
+                <button id="botao-menu" class="menu-botao" type="button" aria-label="Abrir menu">☰</button>
+
+                <ul id="lista-menu" class="menu-lista">
+                    <li><a href="index.html">Início</a></li>
+                    <li class="menu-dropdown">
+                        <a href="#">A EMOBRAS ▾</a>
+                        <ul class="submenu">
+                            <li><a href="sobre.html">Sobre a empresa</a></li>
+                            <li><a href="experiencia.html">Nossa experiência</a></li>
+                            <li><a href="como-trabalhamos.html">Como trabalhamos</a></li>
+                            <li><a href="https://emobraspr.blogspot.com/" target="_blank">Nosso blog antigo ↗</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-dropdown">
+                        <a href="#" class="ativo">Tijolo ecológico ▾</a>
+                        <ul class="submenu">
+                            <li><a href="tijolo-ecologico.html">O que é</a></li>
+                            <li><a href="vantagens.html">Vantagens</a></li>
+                            <li><a href="comparativo.html">Ecológico x convencional</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-dropdown">
+                        <a href="#">Obras ▾</a>
+                        <ul class="submenu">
+                            <li><a href="obras.html">Portfólio</a></li>
+                            <li><a href="obra-atual.html">Obra em andamento</a></li>
+                            <li><a href="galeria.html">Galeria de fotos</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="orcamento.html" class="botao btn-orcamento">Peça seu orçamento</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="pagina-topo">
+            <div class="container">
+                <h1>Ecológico x convencional</h1>
+                <p>Compare o tijolo ecológico com o tijolo cerâmico comum.</p>
+            </div>
+        </section>
+
+        <section class="secao">
+            <div class="container">
+                <div class="tabela-acoes">
+                    <button id="botao-destacar" class="botao btn-orcamento" type="button">Destacar o tijolo ecológico</button>
+                </div>
+                <div class="tabela-rolagem">
+                    <table class="tabela-comparativa">
+                        <thead>
+                            <tr>
+                                <th>Aspecto</th>
+                                <th class="col-ecologico">Tijolo ecológico</th>
+                                <th>Tijolo convencional</th>
+                                <th>Vantagem</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Fabricação</td>
+                            <td class="col-ecologico">Prensado e curado, sem forno</td>
+                            <td>Queimado em forno a lenha</td>
+                            <td>Ecológico</td>
+                        </tr>
+                        <tr>
+                            <td>Entulho na obra</td>
+                            <td class="col-ecologico">Pouco, quase sem quebras</td>
+                            <td>Muito, por causa dos cortes e rasgos</td>
+                            <td>Ecológico</td>
+                        </tr>
+                        <tr>
+                            <td>Canos e fios</td>
+                            <td class="col-ecologico">Passam pelos furos do tijolo</td>
+                            <td>Exigem quebrar a parede</td>
+                            <td>Ecológico</td>
+                        </tr>
+                        <tr>
+                            <td>Reboco</td>
+                            <td class="col-ecologico">Opcional, pode ficar aparente</td>
+                            <td>Necessário</td>
+                            <td>Ecológico</td>
+                        </tr>
+                        <tr>
+                            <td>Velocidade</td>
+                            <td class="col-ecologico">Mais rápido, os tijolos se encaixam</td>
+                            <td>Mais lento</td>
+                            <td>Ecológico</td>
+                        </tr>
+                        <tr>
+                            <td>Mão de obra</td>
+                            <td class="col-ecologico">Precisa de equipe que conheça o método</td>
+                            <td>Qualquer pedreiro conhece</td>
+                            <td>Convencional</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="tabela-nota">Comparação geral. Os resultados podem variar de acordo com cada obra.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="rodape">
+        <div class="container rodape-conteudo">
+            <div>
+                <img src="img/emobras-logo.png" alt="Logo EMOBRAS" class="logo-rodape">
+                <p>Empreiteira de obras com tijolo ecológico em Curitiba e região.</p>
+            </div>
+            <div>
+                <h2>Navegação</h2>
+                <ul>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="obras.html">Obras</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="orcamento.html">Orçamento</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>Contato</h2>
+                <ul>
+                    <li><a href="https://wa.me/5541995332443" target="_blank">(41) 99533-2443</a></li>
+                    <li><a href="mailto:kleberfontanavolpato@gmail.com">kleberfontanavolpato@gmail.com</a></li>
+                    <li>Curitiba - PR</li>
+                </ul>
+            </div>
+        </div>
+        <p class="rodape-copy">© 2026 EMOBRAS. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="js/menu.js"></script>
+    <script src="js/comparativo.js"></script>
+</body>
+
+</html>

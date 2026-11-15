@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<!--
+    EMOBRAS - Empreiteira de Obras com Tijolo Ecológico
+    Página: Obra em andamento (obra-atual.html)
+    Tecnologias: HTML, CSS, JavaScript e Bootstrap
+    Autores: Gustavo Volpato e Gustavo Salazar
+    Disciplina: Desenvolvimento Front-End para Web - Universidade Positivo
+-->
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obra em andamento | EMOBRAS</title>
+    <link rel="icon" href="img/emobras-icone.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/emobras-logo.png" alt="Logo EMOBRAS" class="logo-navbar">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                    aria-controls="menu" aria-expanded="false" aria-label="Abrir menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto align-items-lg-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Início</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">A EMOBRAS</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="sobre.html">Sobre a empresa</a></li>
+                                <li><a class="dropdown-item" href="experiencia.html">Nossa experiência</a></li>
+                                <li><a class="dropdown-item" href="como-trabalhamos.html">Como trabalhamos</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="https://emobraspr.blogspot.com/" target="_blank">Nosso blog antigo ↗</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">Tijolo ecológico</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="tijolo-ecologico.html">O que é</a></li>
+                                <li><a class="dropdown-item" href="vantagens.html">Vantagens</a></li>
+                                <li><a class="dropdown-item" href="comparativo.html">Ecológico x convencional</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">Obras</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="obras.html">Portfólio</a></li>
+                                <li><a class="dropdown-item active" href="obra-atual.html">Obra em andamento</a></li>
+                                <li><a class="dropdown-item" href="galeria.html">Galeria de fotos</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="servicos.html">Serviços</a>
+                        </li>
+
+                        <li class="nav-item ms-lg-2">
+                            <a class="btn btn-orcamento" href="orcamento.html">Peça seu orçamento</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="pagina-topo">
+            <div class="container">
+                <h1>Obra em andamento</h1>
+                <p>Obra Abranches, em Curitiba: acompanhe a construção que estamos fazendo agora.</p>
+            </div>
+        </section>
+
+        <section class="secao">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-12 col-lg-7">
+                        <h2>Vídeo da obra</h2>
+                        <p>Você moraria numa casa feita com tijolo ecológico? Veja como ela é construída.</p>
+                        <video class="video-obra" controls poster="img/obra-atual.jpg">
+                            <source src="video/obra-atual.mp4" type="video/mp4">
+                            Seu navegador não consegue reproduzir este vídeo.
+                        </video>
+                    </div>
+                    <div class="col-12 col-lg-5">
+                        <h2>Som da obra</h2>
+                        <p>A trilha sonora original dos vídeos, gravada no canteiro.</p>
+                        <div class="card card-obra p-4">
+                            <h3 class="card-title">🔊 Trilha original</h3>
+                            <audio controls class="w-100">
+                                <source src="audio/trilha-obra.mp3" type="audio/mpeg">
+                                Seu navegador não consegue reproduzir este áudio.
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="secao secao-clara">
+            <div class="container">
+                <h2 class="secao-titulo">Como está a obra</h2>
+                <p class="secao-subtitulo">Fotos de agosto de 2026 e o andamento de cada etapa.</p>
+                <div class="row g-4 mb-5">
+                    <div class="col-12 col-md-6">
+                        <img src="img/obra-atual.jpg" alt="Obra Abranches vista de lado" class="img-fluid rounded-4 shadow">
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <img src="img/obra-atual-2.jpg" alt="Obra Abranches vista de frente" class="img-fluid rounded-4 shadow">
+                    </div>
+                </div>
+                <div class="etapas">
+                    <div class="etapa">
+                        <div class="etapa-info">
+                            <strong>Fundação</strong>
+                            <span>Concluída</span>
+                        </div>
+                        <div class="progress" role="progressbar" aria-label="Progresso da etapa Fundação" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar barra-obra" style="width: 100%">100%</div>
+                        </div>
+                    </div>
+                    <div class="etapa">
+                        <div class="etapa-info">
+                            <strong>Paredes</strong>
+                            <span>Concluída</span>
+                        </div>
+                        <div class="progress" role="progressbar" aria-label="Progresso da etapa Paredes" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar barra-obra" style="width: 100%">100%</div>
+                        </div>
+                    </div>
+                    <div class="etapa">
+                        <div class="etapa-info">
+                            <strong>Telhado</strong>
+                            <span>Concluída</span>
+                        </div>
+                        <div class="progress" role="progressbar" aria-label="Progresso da etapa Telhado" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar barra-obra" style="width: 100%">100%</div>
+                        </div>
+                    </div>
+                    <div class="etapa">
+                        <div class="etapa-info">
+                            <strong>Instalações</strong>
+                            <span>Em andamento</span>
+                        </div>
+                        <div class="progress" role="progressbar" aria-label="Progresso da etapa Instalações" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar barra-obra" style="width: 85%">85%</div>
+                        </div>
+                    </div>
+                    <div class="etapa">
+                        <div class="etapa-info">
+                            <strong>Acabamento</strong>
+                            <span>Em andamento</span>
+                        </div>
+                        <div class="progress" role="progressbar" aria-label="Progresso da etapa Acabamento" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar barra-obra" style="width: 60%">60%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="rodape">
+        <div class="container rodape-conteudo">
+            <div>
+                <img src="img/emobras-logo.png" alt="Logo EMOBRAS" class="logo-rodape">
+                <p>Empreiteira de obras com tijolo ecológico em Curitiba e região.</p>
+            </div>
+            <div>
+                <h2>Navegação</h2>
+                <ul>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="obras.html">Obras</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="orcamento.html">Orçamento</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>Contato</h2>
+                <ul>
+                    <li><a href="https://wa.me/5541995332443" target="_blank">(41) 99533-2443</a></li>
+                    <li><a href="mailto:kleberfontanavolpato@gmail.com">kleberfontanavolpato@gmail.com</a></li>
+                    <li>Curitiba - PR</li>
+                </ul>
+            </div>
+        </div>
+        <p class="rodape-copy">© 2026 EMOBRAS. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

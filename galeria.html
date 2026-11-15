@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<!--
+    EMOBRAS - Empreiteira de Obras com Tijolo Ecológico
+    Página: Galeria de fotos (galeria.html)
+    Tecnologias: HTML, CSS e JavaScript puros (sem Bootstrap)
+    Autores: Gustavo Volpato e Gustavo Salazar
+    Disciplina: Desenvolvimento Front-End para Web - Universidade Positivo
+-->
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de fotos | EMOBRAS</title>
+    <link rel="icon" href="img/emobras-icone.png">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/puro.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="menu-puro">
+            <div class="container menu-puro-conteudo">
+                <a href="index.html">
+                    <img src="img/emobras-logo.png" alt="Logo EMOBRAS" class="logo-navbar">
+                </a>
+
+                <button id="botao-menu" class="menu-botao" type="button" aria-label="Abrir menu">☰</button>
+
+                <ul id="lista-menu" class="menu-lista">
+                    <li><a href="index.html">Início</a></li>
+                    <li class="menu-dropdown">
+                        <a href="#">A EMOBRAS ▾</a>
+                        <ul class="submenu">
+                            <li><a href="sobre.html">Sobre a empresa</a></li>
+                            <li><a href="experiencia.html">Nossa experiência</a></li>
+                            <li><a href="como-trabalhamos.html">Como trabalhamos</a></li>
+                            <li><a href="https://emobraspr.blogspot.com/" target="_blank">Nosso blog antigo ↗</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-dropdown">
+                        <a href="#">Tijolo ecológico ▾</a>
+                        <ul class="submenu">
+                            <li><a href="tijolo-ecologico.html">O que é</a></li>
+                            <li><a href="vantagens.html">Vantagens</a></li>
+                            <li><a href="comparativo.html">Ecológico x convencional</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-dropdown">
+                        <a href="#" class="ativo">Obras ▾</a>
+                        <ul class="submenu">
+                            <li><a href="obras.html">Portfólio</a></li>
+                            <li><a href="obra-atual.html">Obra em andamento</a></li>
+                            <li><a href="galeria.html">Galeria de fotos</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="orcamento.html" class="botao btn-orcamento">Peça seu orçamento</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="pagina-topo">
+            <div class="container">
+                <h1>Galeria de fotos</h1>
+                <p>Escolha uma obra ou veja todas. Clique em uma foto para ampliar.</p>
+            </div>
+        </section>
+
+        <section class="secao">
+            <div class="container">
+                <div class="filtros-galeria">
+                    <button class="filtro-galeria ativo" type="button" data-obra="todas">Todas</button>
+                    <button class="filtro-galeria" type="button" data-obra="quatro-barras">Quatro Barras</button>
+                    <button class="filtro-galeria" type="button" data-obra="matinhos">Matinhos</button>
+                    <button class="filtro-galeria" type="button" data-obra="shangrila">Shangrilá</button>
+                    <button class="filtro-galeria" type="button" data-obra="edelweiss">Residencial Edelweiss</button>
+                    <button class="filtro-galeria" type="button" data-obra="abranches">Abranches (em andamento)</button>
+                </div>
+                <div class="galeria-info">
+                    <h2 id="titulo-filtro">Todas as obras</h2>
+                    <p>Total de fotos: <strong id="total-fotos">0</strong></p>
+                </div>
+                <div class="galeria">
+                    <figure class="galeria-item grande" data-obra="quatro-barras">
+                        <img src="img/obras/quatro-barras-01.jpg" alt="Fachada com caminho de pedras - Quatro Barras" loading="lazy">
+                        <figcaption>Fachada com caminho de pedras</figcaption>
+                    </figure>
+                    <figure class="galeria-item" data-obra="quatro-barras">
+                        <img src="img/obras/quatro-barras-02.jpg" alt="Caminho de entrada - Quatro Barras" loading="lazy">
+                        <figcaption>Caminho de entrada</figcaption>
+                    </figure>
+                    <figure class="galeria-item" data-obra="quatro-barras">
+                        <img src="img/obras/quatro-barras-03.jpg" alt="Fachada com deck e floreira - Quatro Barras" loading="lazy">
+                        <figcaption>Fachada com deck e floreira</figcaption>
+                    </figure>
+                    <figure class="galeria-item" data-obra="quatro-barras">
+                        <img src="img/obras/quatro-barras-04.jpg" alt="Vista lateral da casa - Quatro Barras" loading="lazy">
+                        <figcaption>Vista lateral da casa</figcaption>
+                    </figure>
+                    <figure class="galeria-item" data-obra="quatro-barras">
+                        <img src="img/obras/quatro-barras-05.jpg" alt="Casa e área externa - Quatro Barras" loading="lazy">
+                        <figcaption>Casa e área externa</figcaption>
+                    </figure>
+                    <figure class="galeria-item" data-obra="quatro-barras">
+                        <img src="img/obras/quatro-barras-06.jpg" alt="Pergolado com mesa - Quatro Barras" loading="lazy">
+                        <figcaption>Pergolado com mesa</figcaption>
+                    </figure>
+                    <figure class="galeria-item" data-obra="quatro-barras">
+                        <img src="img/obras/quatro-barras-07.jpg" alt="Varanda com sofá de madeira - Quatro Barras" loading="lazy">
+                        <figcaption>Varanda com sofá de madeira</figcaption>
+                    </figure>
+                    <figure class="galeria-item" data-obra="quatro-barras">
+                        <img src="img/obras/quatro-barras-08.jpg" alt="Deck ao longo da casa - Quatro Barras" loading="lazy">
+                        <figcaption>Deck ao longo da casa</figcaption>
+                    </figure>
+                    <figure class="galeria-item" data-obra="quatro-barras">
+                        <img src="img/obras/quatro-barras-09.jpg" alt="Sala de jantar integrada - Quatro Barras" loading="lazy">
+                        <figcaption>Sala de jantar integrada</figcaption>
+                    </figure>
+                    <figure class="galeria-item" data-obra="quatro-barras">
+                        <img src="img/obras/quatro-barras-10.jpg" alt="Sala com lareira - Quatro Barras" loading="lazy">
+                        <figcaption>Sala com lareira</figcaption>
+                    </figure>
+                    <figure class="galeria-item grande" data-obra="matinhos">
+                        <img src="img/obras/matinhos-01.jpg" alt="Pergolado na entrada - Matinhos" loading="lazy">
+                        <figcaption>Pergolado na entrada</figcaption>
+                    </figure>
+                    <figure class="galeria-item alta" data-obra="matinhos">
+                        <img src="img/obras/matinhos-02.jpg" alt="Escada interna com tijolo aparente - Matinhos" loading="lazy">
+                        <figcaption>Escada interna com tijolo aparente</figcaption>
+                    </figure>
+                    <figure class="galeria-item" data-obra="matinhos">
+                        <img src="img/obras/matinhos-03.jpg" alt="Platibanda em tijolo ecológico - Matinhos" loading="lazy">
+                        <figcaption>Platibanda em tijolo ecológico</figcaption>
+                    </figure>
+                    <figure class="galeria-item" data-obra="matinhos">
+                        <img src="img/obras/matinhos-04.jpg" alt="Fachada dos fundos com jardim - Matinhos" loading="lazy">
+                        <figcaption>Fachada dos fundos com jardim</figcaption>
+                    </figure>
+                    <figure class="galeria-item" data-obra="matinhos">
+                        <img src="img/obras/matinhos-05.jpg" alt="Churrasqueira em tijolo aparente - Matinhos" loading="lazy">
+                        <figcaption>Churrasqueira em tijolo aparente</figcaption>
+                    </figure>
+                    <figure class="galeria-item" data-obra="matinhos">
+                        <img src="img/obras/matinhos-06.jpg" alt="Telhado verde - Matinhos" loading="lazy">
+                        <figcaption>Telhado verde</figcaption>
+                    </figure>
+                    <figure class="galeria-item" data-obra="matinhos">
+                        <img src="img/obras/matinhos-07.jpg" alt="Sacada com floreira - Matinhos" loading="lazy">
+                        <figcaption>Sacada com floreira</figcaption>
+                    </figure>
+                    <figure class="galeria-item" data-obra="matinhos">
+                        <img src="img/obras/matinhos-08.jpg" alt="Sobrados vistos da rua - Matinhos" loading="lazy">
+                        <figcaption>Sobrados vistos da rua</figcaption>
+                    </figure>
+                    <figure class="galeria-item" data-obra="matinhos">
+                        <img src="img/obras/matinhos-09.jpg" alt="Fachada com portão - Matinhos" loading="lazy">
+                        <figcaption>Fachada com portão</figcaption>
+                    </figure>
+                    <figure class="galeria-item grande" data-obra="shangrila">
+                        <img src="img/obras/shangrila-01.jpg" alt="Parede externa em tijolo aparente - Shangrilá" loading="lazy">
+                        <figcaption>Parede externa em tijolo aparente</figcaption>
+                    </figure>
+                    <figure class="galeria-item" data-obra="shangrila">
+                        <img src="img/obras/shangrila-02.jpg" alt="Parede interna em tijolo ecológico - Shangrilá" loading="lazy">
+                        <figcaption>Parede interna em tijolo ecológico</figcaption>
+                    </figure>
+                    <figure class="galeria-item" data-obra="shangrila">
+                        <img src="img/obras/shangrila-03.jpg" alt="Oitão em tijolo ecológico - Shangrilá" loading="lazy">
+                        <figcaption>Oitão em tijolo ecológico</figcaption>
+                    </figure>
+                    <figure class="galeria-item" data-obra="shangrila">
+                        <img src="img/obras/shangrila-04.jpg" alt="Janela em tijolo aparente - Shangrilá" loading="lazy">
+                        <figcaption>Janela em tijolo aparente</figcaption>
+                    </figure>
+                    <figure class="galeria-item" data-obra="shangrila">
+                        <img src="img/obras/shangrila-05.jpg" alt="Varanda com elementos vazados - Shangrilá" loading="lazy">
+                        <figcaption>Varanda com elementos vazados</figcaption>
+                    </figure>
+                    <figure class="galeria-item grande" data-obra="edelweiss">
+                        <img src="img/obras/edelweiss-01.jpg" alt="Fachada em construção - Residencial Edelweiss" loading="lazy">
+                        <figcaption>Fachada em construção</figcaption>
+                    </figure>
+                    <figure class="galeria-item" data-obra="edelweiss">
+                        <img src="img/obras/edelweiss-02.jpg" alt="Janela de canto - Residencial Edelweiss" loading="lazy">
+                        <figcaption>Janela de canto</figcaption>
+                    </figure>
+                    <figure class="galeria-item" data-obra="edelweiss">
+                        <img src="img/obras/edelweiss-03.jpg" alt="Sobrado com garagem - Residencial Edelweiss" loading="lazy">
+                        <figcaption>Sobrado com garagem</figcaption>
+                    </figure>
+                    <figure class="galeria-item" data-obra="edelweiss">
+                        <img src="img/obras/edelweiss-04.jpg" alt="Vista lateral do sobrado - Residencial Edelweiss" loading="lazy">
+                        <figcaption>Vista lateral do sobrado</figcaption>
+                    </figure>
+                    <figure class="galeria-item grande" data-obra="abranches">
+                        <img src="img/obras/abranches-01.jpg" alt="Obra vista de lado - Abranches (em andamento)" loading="lazy">
+                        <figcaption>Obra vista de lado</figcaption>
+                    </figure>
+                    <figure class="galeria-item" data-obra="abranches">
+                        <img src="img/obras/abranches-02.jpg" alt="Obra vista de frente - Abranches (em andamento)" loading="lazy">
+                        <figcaption>Obra vista de frente</figcaption>
+                    </figure>
+                </div>
+                <p class="galeria-voltar"><a href="obras.html">← Voltar ao portfólio de obras</a></p>
+            </div>
+        </section>
+
+        <div id="visualizador" class="visualizador">
+            <button id="fechar-visualizador" class="visualizador-fechar" type="button" aria-label="Fechar">✕</button>
+            <button id="foto-anterior" class="visualizador-seta anterior" type="button" aria-label="Foto anterior">‹</button>
+            <img id="foto-grande" src="img/obras/quatro-barras-01.jpg" alt="">
+            <button id="foto-proxima" class="visualizador-seta proxima" type="button" aria-label="Próxima foto">›</button>
+            <p id="legenda-foto"></p>
+        </div>
+
+    </main>
+
+    <footer class="rodape">
+        <div class="container rodape-conteudo">
+            <div>
+                <img src="img/emobras-logo.png" alt="Logo EMOBRAS" class="logo-rodape">
+                <p>Empreiteira de obras com tijolo ecológico em Curitiba e região.</p>
+            </div>
+            <div>
+                <h2>Navegação</h2>
+                <ul>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="obras.html">Obras</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="orcamento.html">Orçamento</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>Contato</h2>
+                <ul>
+                    <li><a href="https://wa.me/5541995332443" target="_blank">(41) 99533-2443</a></li>
+                    <li><a href="mailto:kleberfontanavolpato@gmail.com">kleberfontanavolpato@gmail.com</a></li>
+                    <li>Curitiba - PR</li>
+                </ul>
+            </div>
+        </div>
+        <p class="rodape-copy">© 2026 EMOBRAS. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="js/menu.js"></script>
+    <script src="js/galeria.js"></script>
+</body>
+
+</html>

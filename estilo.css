@@ -1,0 +1,549 @@
+/*
+    EMOBRAS - Empreiteira de Obras com Tijolo Ecológico
+    Arquivo: estilo.css (estilo principal do site)
+    Autores: Gustavo Volpato e Gustavo Salazar
+*/
+
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/Inter-Regular.otf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/Inter-SemiBold.otf");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/Inter-ExtraBold.otf");
+    font-weight: 800;
+}
+
+:root {
+    --terracota: #C4703F;
+    --terracota-escuro: #A85C30;
+    --verde: #6DB33F;
+    --marrom: #5E534B;
+    --creme: #FAF6F1;
+    --branco: #FFFFFF;
+}
+
+body {
+    font-family: "Inter", Arial, sans-serif;
+    color: var(--marrom);
+    background-color: var(--branco);
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 800;
+    color: var(--marrom);
+}
+
+img {
+    max-width: 100%;
+}
+
+.logo-navbar {
+    height: 48px;
+}
+
+.navbar .nav-link {
+    font-weight: 600;
+    color: var(--marrom);
+    border-bottom: 2px solid transparent;
+    transition: color 0.2s, border-color 0.2s;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    color: var(--terracota);
+    border-bottom-color: var(--terracota);
+}
+
+.dropdown-item:hover {
+    background-color: var(--creme);
+    color: var(--terracota);
+}
+
+.btn-orcamento {
+    background-color: var(--terracota);
+    color: var(--branco);
+    font-weight: 600;
+    border: none;
+}
+
+.btn-orcamento:hover {
+    background-color: var(--terracota-escuro);
+    color: var(--branco);
+}
+
+#destaque {
+    background-color: var(--creme);
+    padding: 80px 0;
+}
+
+.destaque-conteudo {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+}
+
+.destaque-texto {
+    flex: 1;
+}
+
+.destaque-imagem {
+    flex: 1;
+}
+
+.destaque-imagem img {
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(94, 83, 75, 0.2);
+}
+
+.etiqueta {
+    display: inline-block;
+    background-color: var(--verde);
+    color: var(--branco);
+    font-weight: 600;
+    font-size: 0.85rem;
+    padding: 4px 14px;
+    border-radius: 20px;
+}
+
+.destaque-titulo {
+    font-size: 3rem;
+    line-height: 1.15;
+    margin: 16px 0;
+}
+
+.destaque-descricao {
+    font-size: 1.15rem;
+    margin-bottom: 28px;
+}
+
+.destaque-botoes {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.secao {
+    padding: 70px 0;
+}
+
+.secao-clara {
+    background-color: var(--creme);
+}
+
+.secao-titulo {
+    text-align: center;
+}
+
+.secao-subtitulo {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.vantagens {
+    display: flex;
+    gap: 24px;
+}
+
+.vantagem {
+    flex: 1;
+    text-align: center;
+    padding: 32px 24px;
+    border-radius: 16px;
+    border: 1px solid #EEE4DA;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.vantagem:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 24px rgba(94, 83, 75, 0.12);
+}
+
+.vantagem-icone {
+    font-size: 2.5rem;
+    margin-bottom: 12px;
+}
+
+.vantagem h3 {
+    font-size: 1.25rem;
+}
+
+.card-obra {
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(94, 83, 75, 0.1);
+}
+
+.card-obra .card-title,
+.card-obra .card-text {
+    color: var(--marrom);
+}
+
+.card-obra .card-title {
+    font-size: 1.25rem;
+}
+
+.chamada {
+    background-color: var(--terracota);
+    padding: 50px 0;
+}
+
+.chamada-conteudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.chamada h2 {
+    color: var(--branco);
+    margin: 0;
+}
+
+.rodape {
+    background-color: var(--marrom);
+    color: var(--creme);
+    padding-top: 50px;
+}
+
+.rodape-conteudo {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.logo-rodape {
+    height: 44px;
+    background-color: var(--branco);
+    padding: 6px 10px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+.rodape h2 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--branco);
+}
+
+.rodape ul {
+    list-style: none;
+    padding: 0;
+}
+
+.rodape a {
+    color: var(--creme);
+    text-decoration: none;
+}
+
+.rodape a:hover {
+    color: var(--verde);
+}
+
+.rodape-copy {
+    text-align: center;
+    font-size: 0.85rem;
+    margin: 30px 0 0;
+    padding: 16px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+@media (max-width: 768px) {
+
+    #destaque {
+        padding: 40px 0;
+    }
+
+    .destaque-conteudo {
+        flex-direction: column;
+    }
+
+    .destaque-titulo {
+        font-size: 2rem;
+    }
+
+    .vantagens {
+        flex-direction: column;
+    }
+
+    .chamada-conteudo {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .rodape-conteudo {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+}
+
+.pagina-topo {
+    background-color: var(--creme);
+    padding: 60px 0 50px;
+    text-align: center;
+    border-bottom: 4px solid var(--terracota);
+}
+
+.pagina-topo h1 {
+    font-size: 2.6rem;
+}
+
+.pagina-topo p {
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+.lista-cidades {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    list-style: none;
+    padding: 0;
+}
+
+.lista-cidades li {
+    background-color: var(--creme);
+    border: 1px solid #EEE4DA;
+    border-radius: 30px;
+    padding: 8px 20px;
+    font-weight: 600;
+}
+
+.linha-tempo {
+    list-style: none;
+    padding: 0;
+    max-width: 760px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.marco {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--branco);
+    border: 1px solid #EEE4DA;
+    border-radius: 12px;
+    padding: 12px 20px;
+}
+
+.marco-ano {
+    font-weight: 800;
+    color: var(--terracota);
+    min-width: 56px;
+}
+
+.numeros {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.numero {
+    flex: 1;
+    max-width: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--branco);
+    border-radius: 16px;
+    padding: 28px;
+}
+
+.numero strong {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--terracota);
+}
+
+.passos {
+    list-style: none;
+    padding: 0;
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.passo {
+    display: flex;
+    gap: 20px;
+    padding-bottom: 28px;
+    border-left: 3px dashed #E4D5C7;
+    margin-left: 24px;
+    padding-left: 32px;
+    position: relative;
+}
+
+.passo:last-child {
+    border-left-color: transparent;
+}
+
+.passo-numero {
+    position: absolute;
+    left: -25px;
+    top: 0;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--terracota);
+    color: var(--branco);
+    font-weight: 800;
+    font-size: 1.2rem;
+    border-radius: 50%;
+}
+
+.passo h2 {
+    font-size: 1.25rem;
+    margin-top: 10px;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: var(--creme);
+    color: var(--terracota);
+}
+
+.accordion-button:focus {
+    box-shadow: 0 0 0 3px rgba(196, 112, 63, 0.25);
+}
+
+.filtros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 16px;
+}
+
+.botao-filtro {
+    border: 2px solid var(--terracota);
+    color: var(--terracota);
+    border-radius: 30px;
+    font-weight: 600;
+}
+
+.botao-filtro:hover,
+.botao-filtro.ativo {
+    background-color: var(--terracota);
+    color: var(--branco);
+    border-color: var(--terracota);
+}
+
+.video-obra {
+    width: 100%;
+    border-radius: 16px;
+    background-color: #000;
+}
+
+.etapas {
+    max-width: 760px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.etapa-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6px;
+}
+
+.progress {
+    height: 20px;
+}
+
+.barra-obra {
+    background-color: var(--verde);
+}
+
+.formulario .form-control,
+.formulario .form-select {
+    border: 2px solid #E4D5C7;
+    border-radius: 10px;
+    padding: 10px 14px;
+}
+
+.formulario .form-control:hover,
+.formulario .form-select:hover {
+    border-color: var(--terracota);
+}
+
+.formulario .form-control:focus,
+.formulario .form-select:focus {
+    border-color: var(--verde);
+    box-shadow: 0 0 0 4px rgba(109, 179, 63, 0.2);
+}
+
+.formulario .form-control:invalid:not(:placeholder-shown) {
+    border-color: #D9534F;
+    background-color: #FFF5F5;
+}
+
+.formulario label {
+    font-weight: 600;
+}
+
+.card-pedido {
+    padding: 18px;
+    margin-bottom: 14px;
+    border-radius: 12px;
+    border: 1px solid #EEE4DA;
+}
+
+.card-pedido h3 {
+    font-size: 1.1rem;
+}
+
+.card-pedido p {
+    margin: 6px 0 0;
+    font-size: 0.95rem;
+}
+
+.card-pedido-botoes {
+    display: flex;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+@media (max-width: 768px) {
+
+    .pagina-topo h1 {
+        font-size: 2rem;
+    }
+
+    .numeros {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .numero {
+        width: 100%;
+    }
+
+}
+
+.card-obra .card-img-top {
+    height: 230px;
+    object-fit: cover;
+}
+
+.destaque-imagem img {
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}

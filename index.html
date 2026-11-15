@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<!--
+    EMOBRAS - Empreiteira de Obras com Tijolo Ecológico
+    Página: Início (index.html)
+    Autores: Gustavo Volpato e Gustavo Salazar
+    Disciplina: Desenvolvimento Front-End para Web - Universidade Positivo
+-->
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMOBRAS | Construção com Tijolo Ecológico</title>
+    <link rel="icon" href="img/emobras-icone.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <style>
+        .destaque-titulo span {
+            color: var(--verde);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/emobras-logo.png" alt="Logo EMOBRAS" class="logo-navbar">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                    aria-controls="menu" aria-expanded="false" aria-label="Abrir menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto align-items-lg-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Início</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">A EMOBRAS</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="sobre.html">Sobre a empresa</a></li>
+                                <li><a class="dropdown-item" href="experiencia.html">Nossa experiência</a></li>
+                                <li><a class="dropdown-item" href="como-trabalhamos.html">Como trabalhamos</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="https://emobraspr.blogspot.com/" target="_blank">Nosso blog antigo ↗</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">Tijolo ecológico</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="tijolo-ecologico.html">O que é</a></li>
+                                <li><a class="dropdown-item" href="vantagens.html">Vantagens</a></li>
+                                <li><a class="dropdown-item" href="comparativo.html">Ecológico x convencional</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">Obras</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="obras.html">Portfólio</a></li>
+                                <li><a class="dropdown-item" href="obra-atual.html">Obra em andamento</a></li>
+                                <li><a class="dropdown-item" href="galeria.html">Galeria de fotos</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="servicos.html">Serviços</a>
+                        </li>
+
+                        <li class="nav-item ms-lg-2">
+                            <a class="btn btn-orcamento" href="orcamento.html">Peça seu orçamento</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="destaque">
+            <div class="container destaque-conteudo">
+                <div class="destaque-texto">
+                    <p class="etiqueta">Curitiba e região</p>
+                    <h1 class="destaque-titulo">Você moraria numa casa feita com <span>tijolo ecológico</span>?</h1>
+                    <p class="destaque-descricao">
+                        A EMOBRAS constrói casas mais rápidas, econômicas e sustentáveis.
+                        Você fecha direto com quem constrói, do projeto à entrega das chaves.
+                    </p>
+                    <div class="destaque-botoes">
+                        <a href="orcamento.html" class="btn btn-orcamento btn-lg">Quero um orçamento</a>
+                        <a href="tijolo-ecologico.html" class="btn btn-outline-secondary btn-lg">Conhecer o tijolo</a>
+                    </div>
+                </div>
+                <div class="destaque-imagem">
+                    <img src="img/destaque.jpg" alt="Casa térrea construída pela EMOBRAS em Quatro Barras">
+                </div>
+            </div>
+        </section>
+
+        <section class="secao">
+            <div class="container">
+                <h2 class="secao-titulo">Por que tijolo ecológico?</h2>
+                <p class="secao-subtitulo">O diferencial de todas as nossas obras.</p>
+
+                <div class="vantagens">
+                    <article class="vantagem">
+                        <div class="vantagem-icone">⏱</div>
+                        <h3>Obra mais rápida</h3>
+                        <p>Os tijolos se encaixam uns nos outros, o que acelera o levantamento das paredes.</p>
+                    </article>
+                    <article class="vantagem">
+                        <div class="vantagem-icone">💰</div>
+                        <h3>Mais economia</h3>
+                        <p>Menos desperdício de material e menos entulho no final da obra.</p>
+                    </article>
+                    <article class="vantagem">
+                        <div class="vantagem-icone">🌱</div>
+                        <h3>Sustentável</h3>
+                        <p>Feito de solo, cimento e água, sem queima em forno.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="secao secao-clara">
+            <div class="container">
+                <h2 class="secao-titulo">Obras em destaque</h2>
+                <p class="secao-subtitulo">Algumas das casas que já construímos.</p>
+
+                <div class="row g-4">
+                    <div class="col-12 col-md-4">
+                        <div class="card card-obra h-100">
+                            <img src="img/obra-quatro-barras.jpg" class="card-img-top" alt="Obra Quatro Barras">
+                            <div class="card-body">
+                                <h3 class="card-title">Quatro Barras</h3>
+                                <p class="card-text">Casa térrea com pergolado, deck, lareira e churrasqueira em tijolo ecológico.</p>
+                                <a href="galeria.html?obra=quatro-barras" class="btn btn-sm btn-orcamento">Ver fotos</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="card card-obra h-100">
+                            <img src="img/obra-matinhos.jpg" class="card-img-top" alt="Obra Matinhos">
+                            <div class="card-body">
+                                <h3 class="card-title">Matinhos</h3>
+                                <p class="card-text">Sobrados no litoral com telhado verde e tijolo aparente.</p>
+                                <a href="galeria.html?obra=matinhos" class="btn btn-sm btn-orcamento">Ver fotos</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="card card-obra h-100">
+                            <img src="img/obra-shangrila.jpg" class="card-img-top" alt="Obra Shangrilá">
+                            <div class="card-body">
+                                <h3 class="card-title">Shangrilá</h3>
+                                <p class="card-text">Casa de baixo custo em Pontal do Paraná, com paredes em tijolo ecológico.</p>
+                                <a href="galeria.html?obra=shangrila" class="btn btn-sm btn-orcamento">Ver fotos</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="chamada">
+            <div class="container chamada-conteudo">
+                <h2>Vamos construir a sua casa?</h2>
+                <a href="orcamento.html" class="btn btn-light btn-lg" style="color: #C4703F; font-weight: 600;">Pedir orçamento</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="rodape">
+        <div class="container rodape-conteudo">
+            <div>
+                <img src="img/emobras-logo.png" alt="Logo EMOBRAS" class="logo-rodape">
+                <p>Empreiteira de obras com tijolo ecológico em Curitiba e região.</p>
+            </div>
+            <div>
+                <h2>Navegação</h2>
+                <ul>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="obras.html">Obras</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="orcamento.html">Orçamento</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>Contato</h2>
+                <ul>
+                    <li><a href="https://wa.me/5541995332443" target="_blank">(41) 99533-2443</a></li>
+                    <li><a href="mailto:kleberfontanavolpato@gmail.com">kleberfontanavolpato@gmail.com</a></li>
+                    <li>Curitiba - PR</li>
+                </ul>
+            </div>
+        </div>
+        <p class="rodape-copy">© 2026 EMOBRAS. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

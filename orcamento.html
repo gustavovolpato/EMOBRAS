@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<!--
+    EMOBRAS - Empreiteira de Obras com Tijolo Ecológico
+    Página: Orçamento (orcamento.html)
+    Tecnologias: HTML, CSS, JavaScript e Bootstrap
+    Autores: Gustavo Volpato e Gustavo Salazar
+    Disciplina: Desenvolvimento Front-End para Web - Universidade Positivo
+-->
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peça seu orçamento | EMOBRAS</title>
+    <link rel="icon" href="img/emobras-icone.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/emobras-logo.png" alt="Logo EMOBRAS" class="logo-navbar">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                    aria-controls="menu" aria-expanded="false" aria-label="Abrir menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto align-items-lg-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Início</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">A EMOBRAS</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="sobre.html">Sobre a empresa</a></li>
+                                <li><a class="dropdown-item" href="experiencia.html">Nossa experiência</a></li>
+                                <li><a class="dropdown-item" href="como-trabalhamos.html">Como trabalhamos</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="https://emobraspr.blogspot.com/" target="_blank">Nosso blog antigo ↗</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">Tijolo ecológico</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="tijolo-ecologico.html">O que é</a></li>
+                                <li><a class="dropdown-item" href="vantagens.html">Vantagens</a></li>
+                                <li><a class="dropdown-item" href="comparativo.html">Ecológico x convencional</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">Obras</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="obras.html">Portfólio</a></li>
+                                <li><a class="dropdown-item" href="obra-atual.html">Obra em andamento</a></li>
+                                <li><a class="dropdown-item" href="galeria.html">Galeria de fotos</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="servicos.html">Serviços</a>
+                        </li>
+
+                        <li class="nav-item ms-lg-2">
+                            <a class="btn btn-orcamento" href="orcamento.html">Peça seu orçamento</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="pagina-topo">
+            <div class="container">
+                <h1>Peça seu orçamento</h1>
+                <p>Conte o que você quer construir. Respondemos o mais rápido possível.</p>
+            </div>
+        </section>
+
+        <section class="secao">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-12 col-lg-7">
+                        <div id="alerta-sucesso" class="alert alert-success d-none" role="alert"></div>
+
+                        <form id="form-orcamento" class="formulario">
+                            <div class="mb-3">
+                                <label for="nome" class="form-label">Nome completo</label>
+                                <input type="text" id="nome" class="form-control" placeholder="Ex.: Maria da Silva"
+                                    required minlength="3">
+                            </div>
+
+                            <div class="row">
+                                <div class="col-12 col-md-6 mb-3">
+                                    <label for="email" class="form-label">E-mail</label>
+                                    <input type="email" id="email" class="form-control" placeholder="seuemail@exemplo.com"
+                                        required>
+                                </div>
+                                <div class="col-12 col-md-6 mb-3">
+                                    <label for="telefone" class="form-label">Telefone</label>
+                                    <input type="text" id="telefone" class="form-control" placeholder="(41) 99999-9999"
+                                        required pattern="\(\d{2}\) \d{4,5}-\d{4}" title="Use o formato (41) 99999-9999">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-12 col-md-6 mb-3">
+                                    <label for="cidade" class="form-label">Cidade da obra</label>
+                                    <input type="text" id="cidade" class="form-control" placeholder="Ex.: Campo Largo"
+                                        required minlength="3">
+                                </div>
+                                <div class="col-12 col-md-6 mb-3">
+                                    <label for="servico" class="form-label">Tipo de serviço</label>
+                                    <select id="servico" class="form-select" required>
+                                        <option value="">Selecione...</option>
+                                        <option value="Construção de casa">Construção de casa</option>
+                                        <option value="Reforma">Reforma</option>
+                                        <option value="Ampliação">Ampliação</option>
+                                        <option value="Terraplanagem">Terraplanagem</option>
+                                        <option value="Outro">Outro</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="mensagem" class="form-label">Conte sobre a sua obra</label>
+                                <textarea id="mensagem" class="form-control" rows="5"
+                                    placeholder="Ex.: Quero construir uma casa de 2 quartos em um terreno de 300 m²."
+                                    required minlength="10"></textarea>
+                            </div>
+
+                            <input type="submit" id="botao-enviar" class="btn btn-orcamento btn-lg" value="Enviar pedido">
+                        </form>
+                    </div>
+
+                    <aside class="col-12 col-lg-5">
+                        <h2 class="h4">Meus pedidos</h2>
+                        <p>Os pedidos ficam salvos neste navegador, mesmo se você fechar a página.</p>
+                        <p id="sem-pedidos" class="text-muted">Nenhum pedido enviado ainda.</p>
+                        <div id="lista-pedidos"></div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="rodape">
+        <div class="container rodape-conteudo">
+            <div>
+                <img src="img/emobras-logo.png" alt="Logo EMOBRAS" class="logo-rodape">
+                <p>Empreiteira de obras com tijolo ecológico em Curitiba e região.</p>
+            </div>
+            <div>
+                <h2>Navegação</h2>
+                <ul>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="obras.html">Obras</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="orcamento.html">Orçamento</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>Contato</h2>
+                <ul>
+                    <li><a href="https://wa.me/5541995332443" target="_blank">(41) 99533-2443</a></li>
+                    <li><a href="mailto:kleberfontanavolpato@gmail.com">kleberfontanavolpato@gmail.com</a></li>
+                    <li>Curitiba - PR</li>
+                </ul>
+            </div>
+        </div>
+        <p class="rodape-copy">© 2026 EMOBRAS. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/orcamento.js"></script>
+</body>
+
+</html>
